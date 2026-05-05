@@ -76,23 +76,33 @@ GithubExplorer/
 │       ├── raw/                   # .json.gz files (gitignored)
 │       └── final_dataset.json     # built dataset (gitignored)
 │
-└── frontend/                      # React frontend
+└── front/                      # React frontend
     ├── src/
     │   ├── App.jsx                # layout + navigation
-    │   ├── constants.js           # theme, colors, nav config
-    │   ├── components.jsx         # Kpi, Panel, Tip, Loading, Error
+    │   ├── index.css
+    │   ├── main.jsx
     │   │
     │   ├── pages/
     │   │   ├── TrendsPage.jsx     # language distribution + frameworks
     │   │   ├── EcosystemPage.jsx  # framework co-occurrence per language
     │   │   ├── BehaviorPage.jsx   # commit intent + day-of-week activity
-    │   │   └── PipelinePage.jsx   # dataset inspector + rebuild trigger
+    │   │   ├── DatasetPage.jsx    # dataset inspector + rebuild trigger
+    │   │   └── ChatbotPage.jsx    # chatbot integration page
     │   │
     │   ├── hooks/
     │   │   └── useApi.js          # reusable data fetching hook
     │   │
-    │   └── services/
-    │       └── api.js             # all API calls in one place
+    │   ├── styles/
+    │   │   └── tokens.js          # theme, fonts and colors 
+    │   │
+    │   ├── components/
+    │   │   └──ui
+    │   │      └── index.jsx       # reusable components
+    │   │
+    │   ├── assets/                # logos and images
+    │   │
+    │   └── api/
+    │       └── index.js           # all API calls in one place
     │
     ├── index.html
     ├── package.json
@@ -180,7 +190,6 @@ npm run dev
 | GET | `/api/repos/intent` | Overall commit intent distribution |
 | GET | `/api/repos/build-status` | Dataset build status + log |
 | POST | `/api/repos/build-dataset` | Trigger a dataset rebuild |
-| GET | `/api/health` | Health check |
 ---
 
 ## 🙏 Data sources
