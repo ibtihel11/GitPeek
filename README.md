@@ -59,6 +59,7 @@ GithubExplorer/
 │   ├── routes/
 │   │   ├── languages.py           # GET /api/languages/
 │   │   ├── frameworks.py          # GET /api/frameworks/
+│   │   ├── chat.py          # GET /api/frameworks/
 │   │   └── repos.py               # GET /api/repos/
 │   │
 │   ├── services/
