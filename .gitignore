@@ -1,0 +1,58 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Environment variables ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Dataset files (too large for git) ────────────────────
+back/data/raw/
+back/data/processed/
+back/data/exports/
+back/data/final_dataset.json
+back/data/final_dataset1.json
+back/data/merged_dataset.json
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Node / React ─────────────────────────────────────────
+node_modules/
+dist/
+build/
+.next/
+
+# ── Vite ─────────────────────────────────────────────────
+*.local
+
+# ── GitHub token safety net ──────────────────────────────
+*.token
+secrets.py
+config.py
