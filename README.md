@@ -1,4 +1,4 @@
-# 🔬 GitHub Tech Explorer
+# 🔬 GitPeek: GitHub Tech Explorer
 
 A full-stack data analytics platform that analyzes real GitHub Archive events to surface technology trends, developer behavior, and ecosystem insights from January 2026 data.
 
