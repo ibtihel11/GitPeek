@@ -2,21 +2,11 @@
 
 A full-stack data analytics platform that analyzes real GitHub Archive events to surface technology trends, developer behavior, and ecosystem insights from January 2026 data.
 
----
-
-## 📸 Preview
-
-| Tech Trends | Ecosystem Explorer |
-|---|---|
-| Language distribution across all events | Framework co-occurrence per language |
-
-| Developer Behavior | Dataset Inspector |
-|---|---|
-| Commit intent classification | Real-time dataset metadata |
+<img width="1555" height="885" alt="image" src="https://github.com/user-attachments/assets/af6969cf-2582-4963-86b4-1377260bd251" />
 
 ---
 
-## 🧠 What it does
+## What it does
 
 - Parses **GitHub Archive `.json.gz` files** covering January 2026
 - Enriches repos with their primary language via the **GitHub GraphQL API**
@@ -27,7 +17,7 @@ A full-stack data analytics platform that analyzes real GitHub Archive events to
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 GitHub Archive (.json.gz)
@@ -47,7 +37,7 @@ React (localhost:5173)      — dashboard with 4 pages
 
 ---
 
-## 🗂️ Project structure
+## Project structure
 
 ```
 GithubExplorer/
@@ -112,7 +102,7 @@ GithubExplorer/
 
 ---
 
-## ⚙️ Tech stack
+## Tech stack
 
 ### Backend
 | Tool | Purpose |
@@ -149,7 +139,7 @@ GithubExplorer/
 - A GitHub Personal Access Token ([get one here](https://github.com/settings/tokens))
 - GitHub Archive `.json.gz` files in `back/data/raw/`
 
-### 🧪 Tested configuration
+### Tested configuration
 
 - CPU: Intel i3
 - RAM: 20 GB
@@ -178,7 +168,7 @@ npm run dev
 
 ---
 
-## 📡 API endpoints
+## API endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -193,7 +183,7 @@ npm run dev
 | POST | `/api/repos/build-dataset` | Trigger a dataset rebuild |
 ---
 
-## 🙏 Data sources
+## Data sources
 
 - **[GitHub Archive](https://gharchive.org)** — public GitHub event data recorded hourly since 2011
 - **[GitHub GraphQL API](https://docs.github.com/en/graphql)** — repo metadata including primary language
